@@ -100,49 +100,48 @@ tile_set = ExtResource("2_ycdy4")
 [node name="Books" type="Node2D" parent="." unique_id=737328604]
 
 [node name="Book1" parent="Books" unique_id=642975732 instance=ExtResource("5_u7hr5")]
+visible = false
 position = Vector2(512, -64)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_w48qg")
 
 [node name="Book6" parent="Books" unique_id=967253385 instance=ExtResource("5_u7hr5")]
+visible = false
 position = Vector2(512, -64)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_w48qg")
 
 [node name="Book2" parent="Books" unique_id=1339059631 instance=ExtResource("5_u7hr5")]
+visible = false
 position = Vector2(1550, -1437)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_w48qg")
 
 [node name="Book3" parent="Books" unique_id=1235421915 instance=ExtResource("5_u7hr5")]
+visible = false
 position = Vector2(129, -1969)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_w48qg")
 
 [node name="Book4" parent="Books" unique_id=1689993332 instance=ExtResource("5_u7hr5")]
+visible = false
 position = Vector2(1405, -2949)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_w48qg")
 
 [node name="Book5" parent="Books" unique_id=1659710016 instance=ExtResource("5_u7hr5")]
+visible = false
 position = Vector2(147, -3480)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_w48qg")
 
 [node name="Player" parent="." unique_id=1946346246 instance=ExtResource("2_7yl00")]
+visible = false
 position = Vector2(89, 612)
 scale = Vector2(1.2, 1.2)
 collision_layer = 1
 collision_mask = 7
 sprite_frames = ExtResource("9_ycdy4")
-
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1855699799]
-position = Vector2(0, 15)
-limit_left = -262
-limit_top = -10000198
-limit_right = 2161
-limit_bottom = 954
-position_smoothing_enabled = true
 
 [node name="movingplatform" parent="." unique_id=97500897 instance=ExtResource("14_w48qg")]
 position = Vector2(154, -620)
@@ -164,6 +163,15 @@ visible = false
 [node name="bouncingplatform" parent="Platforms" unique_id=991071807 instance=ExtResource("14_vivmo")]
 visible = false
 position = Vector2(1667, 1032)
+
+[node name="Camera2D" type="Camera2D" parent="Platforms" unique_id=1855699799]
+position = Vector2(89, 630)
+scale = Vector2(1.2, 1.2)
+limit_left = -88
+limit_top = -10000016
+limit_right = 2335
+limit_bottom = 1136
+position_smoothing_enabled = true
 
 [node name="bouncingplatform3" parent="Platforms" unique_id=1958887115 instance=ExtResource("14_vivmo")]
 visible = false
